@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/main_bg"
+    tools:context=".presentation.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/b_getData"
+            android:layout_width="339dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:text="update weather!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tempData"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_pressureData"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pressureData"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_feelsLikeData"
+            app:layout_constraintTop_toBottomOf="@id/tv_tempData" />
+
+        <TextView
+            android:id="@+id/tv_feelsLikeData"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/b_getData"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tempData" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
