@@ -8,7 +8,7 @@
     android:background="@drawable/main_bg"
     android:orientation="vertical"
     android:padding="25dp"
-    tools:context=".presentation.MainActivity">
+    tools:context=".presentation.fragments.MainFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/mainContainer"
@@ -16,11 +16,11 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/b_getData"
+            android:id="@+id/b_updateWeather"
             android:layout_width="339dp"
             android:layout_height="48dp"
             android:layout_marginBottom="16dp"
-            android:text="update weather!"
+            android:text="@string/update_weather"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -43,7 +43,7 @@
             android:id="@+id/tv_feelsLikeData"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            app:layout_constraintBottom_toTopOf="@+id/b_getData"
+            app:layout_constraintBottom_toTopOf="@+id/b_updateWeather"
             app:layout_constraintTop_toBottomOf="@+id/tv_tempData" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
